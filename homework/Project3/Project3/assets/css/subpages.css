@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poly&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -11,14 +13,90 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #f6e2e2;
+  font-family: "Poly", serif;
 }
 
-.story-container {
+header {
   display: flex;
-  height: 85vh;
-  max-width: 80%;
+  height: 15vh;
+  align-items: center;
+  font-family: "Poly", serif;
+  font-size: 38px;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 60%;
+  height: 7%;
+  background-color: #9deef9;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  width: 80%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(46, 45, 45);
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.container {
+  display: flex;
+  height: 75vh;
+  max-width: 60%;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.938);
+  flex-direction: column;
+}
+
+.content {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  max-width: 80%;
+}
+/* Talents Page  */
+.talents-list {
+  display: inline-block;
+  width: 40%;
+}
+
+.talents-list li {
+  padding: 1rem;
+  list-style: disc;
+  font-size: 1.2rem;
+}
+
+/* Gallery Page */
+.gallery {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  background-color: white;
+  max-height: 70vh;
+  min-width: 60vw;
+}
+
+.gallery img {
+  padding: 1.2rem;
+  max-height: 90%;
+  max-width: 100%;
 }

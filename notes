@@ -1,0 +1,9 @@
+host = citwebdev.cscc.edu
+username = cscc username
+pwd = csccUsername with last 4 of cougar ID
+port = 22
+
+
+// to check assignment go to //
+
+http://citwebdev.cscc.edu/~<your_username>/csci1145/<assignment name>
