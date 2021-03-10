@@ -1,0 +1,46 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+caption {
+  font-size: 25px;
+  padding: 10px;
+}
+
+table,
+thead,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+tbody tr {
+  background-color: #0056ed;
+}
+tbody tr:nth-child(odd) {
+  background-color: #d7fafe;
+}
+
+thead,
+td {
+  padding: 20px;
+  text-align: center;
+}
+tr {
+  height: 50px;
+}
+thead {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+tfoot {
+  background-color: black;
+  color: white;
+  font-size: 9px;
+  text-align: center;
+}
