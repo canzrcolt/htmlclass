@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+Colton Duncan
+CSCC 1145 
+3/20/21 
+Exercise 8 
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Layout Task</title>
+    <style>
+      body {
+        height: 100vh;
+        width: 100vw;
+        background-color: #666666;
+        display: flex;
+        justify-content: center;
+        font-family: sans-serif;
+      }
+      h2 {
+        font-weight: 800;
+        padding-bottom: 0.8rem;
+        font-size: 34px;
+        font-family: roboto;
+      }
+      label,
+      input {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 15px;
+      }
+      .content-container {
+        display: flex;
+        border: 6px solid #333333;
+        border-top: none;
+        position: absolute;
+        top: 0;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 4rem;
+        width: 77%;
+        height: 60%;
+        justify-content: center;
+        background-color: #ffffed;
+      }
+      .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        width: 21%;
+      }
+      .content textarea {
+        width: 70%;
+        resize: none;
+        overflow: hidden;
+        font-family: Arial;
+        font-size: 16px;
+      }
+      .left-padding-content {
+        padding-left: 3px;
+      }
+      .dropdown {
+        padding-bottom: 1rem;
+      }
+      .additional-instructions {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-container">
+      <div class="content">
+        <h2>Red Sweatshirt</h2>
+        <div class="left-padding-content">
+          <div class="dropdown">
+            <label for="size">Size:</label>
+            <select name="size" id="size">
+              <option value="Small">Small</option>
+              <option value="Medium" selected>Medium</option>
+              <option value="Large">Large</option>
+            </select>
+          </div>
+          <div>
+            <input type="checkbox" checked name="giftWrap" id="giftWrap" />
+            <label for="giftWrap">Gift wrap for additional $3</label>
+          </div>
+          <div class="additional-instructions">
+            <label for="additionalInstructions">Additional Instructions </label>
+            <textarea
+              name="additionInstructions"
+              id="additionalInstructions"
+              cols="2"
+              rows="2"
+            >
+Please leave on front porch and not at rear porch.</textarea
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
