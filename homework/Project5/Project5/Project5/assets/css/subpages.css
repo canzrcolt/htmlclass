@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poly&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6e2e2;
+  font-family: "Poly", serif;
+}
+
+header {
+  display: flex;
+  height: 15vh;
+  align-items: center;
+  font-family: "Poly", serif;
+  font-size: 38px;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 60%;
+  height: 7%;
+  background-color: #9deef9;
+  align-items: center;
+  border-radius: 10rem 1rem 0rem 0rem;
+  justify-content: center;
+}
+
+ul {
+  width: 80%;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(46, 45, 45);
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.container {
+  display: flex;
+  height: 70vh;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.938);
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+form input,
+textarea {
+  font-size: 1.2rem;
+  border: 2px solid pink;
+  border-radius: 0.2rem;
+  padding: 3px;
+}
+
+form input:focus,
+textarea:focus {
+  border: 4px solid #9deef9;
+}
+
+.content {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+}
+
+.main-logo {
+  width: 7%;
+  position: fixed;
+  right: 10%;
+  top: 1%;
+}
+button {
+  background-color: #30494d;
+  font-size: 1rem;
+  text-decoration: none;
+  border-style: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: whitesmoke;
+}
+
+button:hover {
+  background-color: #9be7f3;
+  color: #30494d;
+}
+textarea {
+  font-family: "Poly";
+}
+/* Talents Page  */
+.talents-list {
+  display: inline-block;
+  width: 40%;
+}
+
+.talents-list li {
+  padding: 1rem;
+  list-style: disc;
+  font-size: 1.2rem;
+}
+
+/* Gallery Page */
+.gallery {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  background-color: white;
+  max-height: 70vh;
+  min-width: 60vw;
+  border-radius: 1rem;
+}
+
+.gallery img {
+  padding: 1.2rem;
+  max-height: 90%;
+  max-width: 100%;
+  border-radius: 2.5rem;
+}
